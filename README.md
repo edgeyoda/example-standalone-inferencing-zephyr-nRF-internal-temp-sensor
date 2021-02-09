@@ -1,6 +1,6 @@
 # Edge Impulse Example: stand-alone inferencing (Zephyr) with nRF internal (die) temp sensor support
 
-This is a modified version of the Edge Impulse stand-alone inferencing (Zephyr) example with nRF internal (die) temp sensor support. See the documentation at [Running your impulse locally (Zephyr)](https://docs.edgeimpulse.com/docs/running-your-impulse-locally-zephyr).
+This is a modified version of the Edge Impulse stand-alone inferencing (Zephyr) example with nRF internal (die) temp sensor support. See the documentation at [Running your impulse locally (Zephyr)](https://docs.edgeimpulse.com/docs/running-your-impulse-locally-zephyr) to make sure your development environment is setup correctly before attempting to build and run this example.
 
 ## Tested on
 
@@ -15,10 +15,8 @@ But should run as-is on most development boards. If you run this example on a no
 
 ## How to run this example
 
-* Go to https://studio.edgeimpulse.com/studio/16389/, clone this project, and export as a C++ library from the "Deployment" page
 * On your command line interface, perform a git clone https://github.com/edgeyoda/example-standalone-inferencing-zephyr-nRF-internal-temp-sensor.git
-* Drop the contents of the C++ library (except for CMakesList.txt) into the recently cloned folder
 * On your command line interface type: west build -b nrf52840dk_nrf52840
-* After the build completes, go to build/zephyr and copy the zephyr.bin to the Mass Storage drive letter that the nRF52840 DK pops up with. After the device writes the program to 
-  flash and reboots, the anomaly score will be printed over the COM port the nRF52840 DK comes up with
+* After the build completes, go to build/zephyr and copy the zephyr.bin to the Mass Storage drive letter that the nRF52840 DK pops up with. After the device writes  
+  the program to flash and reboots, the anomaly score will be printed over the COM port the nRF52840 DK comes up with
 * Use a terminal program to view the anomaly score with 115200 baud rate and 8-N-1 settings
