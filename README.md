@@ -12,3 +12,13 @@ This example has been tested on the nRF52840 DK but should work on all the follo
 * [nrf9160dk_nrf9160](https://docs.zephyrproject.org/latest/boards/arm/nrf9160dk_nrf9160/doc/index.html)
 
 But should run as-is on most development boards. If you run this example on a non-Arm development board you'll want to disable the CMSIS-DSP and CMSIS-NN macros in [CMakeLists.txt](CMakeLists.txt).
+
+## How to run this example
+
+* Go to https://studio.edgeimpulse.com/studio/16389/, clone this project, and export as a C++ library from the "Deployment" page
+* On your command line interface, perform a git clone https://github.com/edgeyoda/example-standalone-inferencing-zephyr-nRF-internal-temp-sensor.git
+* Drop the contents of the C++ library (except for CMakesList.txt) into the recently cloned folder
+* On your command line interface type: west build -b nrf52840dk_nrf52840
+* After the build completes, go to build/zephyr and copy the zephyr.bin to the Mass Storage drive letter that the nRF52840 DK pops up with. After the device writes the program to 
+  flash and reboots, the anomaly score will be printed over the COM port the nRF52840 DK comes up with
+* Use a terminal program to view the anomaly score with 115200 baud rate and 8-N-1 settings
