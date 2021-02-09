@@ -1,0 +1,14 @@
+sample:
+  description: example-standalone-inferencing-zephyr-internal-temp-sensor, Edge Impulse example for Zephyr using nRF52 internal (die) temp sensor
+    application
+  name: example-standalone-inferencing-zephyr-internal-temp-sensor
+common:
+    tags: introduction
+    harness: console
+    harness_config:
+      type: one_line
+      regex:
+        - "Hello World! (.*)"
+tests:
+  sample.basic.helloworld:
+    tags: introduction
