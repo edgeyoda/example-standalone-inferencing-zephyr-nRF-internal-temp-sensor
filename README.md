@@ -20,3 +20,6 @@ But should run as-is on most development boards. If you run this example on a no
 * After the build completes, go to build/zephyr and copy the zephyr.bin to the Mass Storage drive letter that the nRF52840 DK pops up with. After the device writes  
   the program to flash and reboots, the anomaly score will be printed over the COM port the nRF52840 DK comes up with
 * Use a terminal program to view the anomaly score with 115200 baud rate and 8-N-1 settings
+* The easiest way to test this is to take a hair dryer and direct it towards the chip on DK and see the anomaly score rise
+* For the anomaly detection model and dataset view the Edge Impulse project at: https://studio.edgeimpulse.com/studio/16389/. This model was design to alert freezer door 
+  open/close.
