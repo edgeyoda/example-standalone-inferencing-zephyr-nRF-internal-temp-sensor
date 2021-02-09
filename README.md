@@ -4,7 +4,7 @@ This is a modified version of the Edge Impulse stand-alone inferencing (Zephyr) 
 
 ## Tested on
 
-This example has been tested on the nRF52840dk but should work on all the following boards:
+This example has been tested on the nRF52840 DK but should work on all the following boards:
 
 * [nrf52dk_nrf52832](https://docs.zephyrproject.org/latest/boards/arm/nrf52dk_nrf52832/doc/index.html)
 * [nRF52840dk_nrf52840](https://docs.zephyrproject.org/latest/boards/arm/nrf52840dk_nrf52840/doc/index.html)
